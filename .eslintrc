@@ -1,0 +1,40 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "prettier",
+    "jest",
+    "eslint-plugin-tsdoc"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jest/recommended"
+  ],
+  "env": {
+    "node": true,
+    "jest": true,
+    "browser": true,
+    "es6": true
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "no-unused-vars": "off",
+    "prefer-const": "error",
+    "tsdoc/syntax": "warn"
+  },
+  "overrides": [
+    {
+      "files": "*",
+      "rules": {
+        "node/no-unpublished-require": 0
+      }
+    }
+  ]
+}

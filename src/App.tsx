@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { HashRouter, Route, Switch } from 'react-router-dom';
+import { Header } from './views/header';
+import { Footer } from './views/footer';
+import { Home } from './views/home';
+import { About } from './views/about';
+import { Contact } from './views/contact';
+import './style/index.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+export const App = (): JSX.Element => {
+    return (
+        <div>
+            <Header />
+            <HashRouter>
+                <Switch>
+                    <Route path="/about" component={About} />
+                    <Route path="/contact" component={Contact} />
+                    <Route path="/" component={Home} />
+                </Switch>
+            </HashRouter>
+            <Footer />
+        </div>
+    );
+};
