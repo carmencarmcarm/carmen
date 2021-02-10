@@ -9,7 +9,7 @@ import './style/index.scss';
 
 export const App = (): JSX.Element => {
     return (
-        <div>
+        <div className="app-content">
             <Header />
             <HashRouter>
                 <Switch>
