@@ -1,7 +1,6 @@
 import React from 'react';
 import { Linkedin } from 'react-bootstrap-icons';
 import { Instagram } from 'react-bootstrap-icons';
-import '../style/footer.scss';
 
 export const Footer = (): JSX.Element => {
     return (
@@ -15,7 +14,7 @@ export const Footer = (): JSX.Element => {
                         </a>
                     </span>
                     <span className="icon">
-                        <a href="https://www.linkedin.com/in/carmen-leung/" target="_blank">
+                        <a href="https://www.instagram.com/carmencarmcarm/" target="_blank">
                             <Instagram size="2rem" />
                         </a>
                     </span>

@@ -1,14 +1,13 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import '../style/home.scss';
 
 export const Home = (): JSX.Element => {
     return (
-        <div>
+        <div className="home">
             <Container
                 fluid
                 style={{
-                    backgroundImage: `url("images/home.JPG")`,
+                    backgroundImage: `url("images/home.jpg")`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',

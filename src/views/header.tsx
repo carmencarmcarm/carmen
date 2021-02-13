@@ -1,11 +1,10 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import '../style/header.scss';
 
 export const Header = (): JSX.Element => {
     return (
-        <Navbar sticky="top" className="header">
+        <Navbar className="header">
             <Navbar.Brand className="name" href="#/">
                 Carmen Leung
             </Navbar.Brand>
@@ -15,7 +14,7 @@ export const Header = (): JSX.Element => {
             <Nav.Link className="label" href="#about">
                 About
             </Nav.Link>
-            <Nav.Link className="label" href="#about">
+            <Nav.Link className="label" href="#collaborate">
                 Work with Me
             </Nav.Link>
             <Nav.Link className="label" href="#contact">

@@ -5,6 +5,7 @@ import { Footer } from './views/footer';
 import { Home } from './views/home';
 import { About } from './views/about';
 import { Contact } from './views/contact';
+import { Collaborate } from './views/collaborate';
 import './style/index.scss';
 
 export const App = (): JSX.Element => {
@@ -15,6 +16,7 @@ export const App = (): JSX.Element => {
                 <Switch>
                     <Route path="/about" component={About} />
                     <Route path="/contact" component={Contact} />
+                    <Route path="/collaborate" component={Collaborate} />
                     <Route path="/" component={Home} />
                 </Switch>
             </HashRouter>
