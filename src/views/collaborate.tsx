@@ -6,7 +6,7 @@ export const Collaborate = (): JSX.Element => {
     return (
         <Container className="about">
             <div className="content">
-                <div className="question">Are you a Non-Profit?</div>
+                <div className="question">Are you a Non-Profit in the Pacific Northwest?</div>
             </div>
             <div className="content">
                 <div className="question">Are you looking for a Certified Project Manager?</div>
@@ -20,7 +20,7 @@ export const Collaborate = (): JSX.Element => {
                     <div className="contact-info">
                         <div>I am offering pro-bono project management consulting and services to Non-Profits.</div>
                         <div>
-                            Email me at carmenleung@outlook.com or fill out the <Link to="/contact">form here</Link>
+                            Please fill out <Link to="/contact">this form</Link> to send me a message.
                         </div>
                         <div>I would love to chat and understand your needs.</div>
                     </div>
